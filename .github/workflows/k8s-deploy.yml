@@ -7,7 +7,7 @@ env:
   REGISTRY_NAME: igorira
   CLUSTER_NAME: aks-eesdevops
   CLUSTER_RESOURCE_GROUP: rg-eesdevops-dev-main
-  NAMESPACE: eesdevops-namespace
+  NAMESPACE: eesdevops-wordpress-namespace
   SECRET: wordpress-cr
   APP_NAME: wordpressapp
   BUILD_FILE: ./
