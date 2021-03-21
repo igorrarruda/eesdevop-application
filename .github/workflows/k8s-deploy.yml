@@ -34,5 +34,7 @@ jobs:
       with:
         manifests: |
           ./kustomization.yaml
+          ./mysql-deployment.yaml
+          ./wordpress-deployment.yaml
         namespace: ${{ env.NAMESPACE }}
         
