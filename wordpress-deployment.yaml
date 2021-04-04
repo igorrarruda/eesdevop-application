@@ -49,7 +49,11 @@ spec:
         name: wordpress
         env:
         - name: WORDPRESS_DB_HOST
-          value: wordpress-mysql
+          value: eesdevops-mysqlserver.mysql.database.azure.com
+        - name: WORDPRESS_DB_USER
+          value: mysqladminin
+        - name: WORDPRESS_DB_NAME
+          value: eestf-wordpressdb
         - name: WORDPRESS_DB_PASSWORD
           valueFrom:
             secretKeyRef:

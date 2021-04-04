@@ -29,12 +29,10 @@ jobs:
     - run: |
         kubectl create namespace ${{ env.NAMESPACE }} --dry-run -o json | kubectl apply -f -
         
-    - name: Deploy app controller to AKS
+    - name: Deploy app to AKS
       uses: azure/k8s-deploy@v1
       with:
         manifests: |
-          ./kustomization.yaml
-          ./mysql-deployment.yaml
           ./wordpress-deployment.yaml
         namespace: ${{ env.NAMESPACE }}
         
