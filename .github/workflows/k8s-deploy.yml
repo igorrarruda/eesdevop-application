@@ -33,7 +33,6 @@ jobs:
       uses: azure/k8s-deploy@v1
       with:
         manifests: |
-          ./kustomization.yaml
           ./wordpress-deployment.yaml
         namespace: ${{ env.NAMESPACE }}
         

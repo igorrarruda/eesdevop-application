@@ -55,10 +55,7 @@ spec:
         - name: WORDPRESS_DB_NAME
           value: eestf-wordpressdb
         - name: WORDPRESS_DB_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: mysql-pass
-              key: password
+          value: H@Sh1CoR3!
         ports:
         - containerPort: 80
           name: wordpress
